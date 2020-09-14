@@ -1,0 +1,46 @@
+{
+  "name": "lima-client-mapbox",
+  "version": "1.0.0",
+  "description": "second version based on mapbox-gl-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Global-Mapping-Hub/lima-client-mapbox.git"
+  },
+  "keywords": [
+    "mapbox-gl-js",
+    "crowdmapping",
+    "crowdsourcing"
+  ],
+  "author": "fixxy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Global-Mapping-Hub/lima-client-mapbox/issues"
+  },
+  "homepage": "https://github.com/Global-Mapping-Hub/lima-client-mapbox#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@mapbox/mapbox-gl-draw": "^1.2.0",
+    "@turf/area": "^6.0.1",
+    "@turf/turf": "^5.1.6",
+    "axios": "^0.20.0",
+    "mapbox-gl": "^1.12.0",
+    "md5": "^2.3.0",
+    "moment": "^2.28.0",
+    "socket.io-client": "^2.3.0",
+    "turf-polygon": "^1.0.3"
+  }
+}

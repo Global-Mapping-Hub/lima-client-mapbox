@@ -3,6 +3,18 @@ Very early alpha build, still need to get rid of the copy-pasted jquery bits. Co
 
 Platform for crowdmapping/crowdsourcing projects using mapbox-gl-js.
 
+## Installation
+```shell
+git clone https://github.com/Global-Mapping-Hub/lima-client-mapbox.git
+cd lima-client-mapbox
+npm install
+```
+
+## Build
+```shell
+npm run build
+```
+
 ## Configuration File
 You can change most of the stuff in **src/config.js**
 

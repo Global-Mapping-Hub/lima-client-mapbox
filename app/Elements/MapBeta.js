@@ -1,6 +1,15 @@
+import io from 'socket.io-client';
+import axios from 'axios';
+import moment from 'moment';
+import md5 from 'md5';
+import {area as turfarea} from '@turf/area';
+import {polygon as turfpolygon} from 'turf-polygon';
+
+import mapboxgl from 'mapbox-gl';
+import MapboxDraw from "@mapbox/mapbox-gl-draw";
+
 import {apiUrl, vtilesUrl, vtilesLayer} from '../config';
 import {tooltipGen} from '../Utilities/Templates';
-
 import MapboxGLButtonControl from '../Utilities/MapboxButtons';
 
 import Spinner from './Spinner';
@@ -110,7 +119,7 @@ export default class liveMonitoringMap {
 					// check if geometry is not null
 					if (geom.coordinates[0][0] !== null) {
 						// calculate polygon's area and assign an id
-						let area = turf.area(turf.polygon(geom.coordinates))/10000; // sq.m to ha
+						let area = turfarea(turfpolygon(geom.coordinates))/10000; // sq.m to ha
 						let geoid = feature.id;
 
 						// TODO: change to live date
